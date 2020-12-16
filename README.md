@@ -1,2 +1,2 @@
 # node-busworld-TG
-projeteando recursos para testes
+projetando recursos para testes
