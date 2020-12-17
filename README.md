@@ -1,2 +1,15 @@
 # node-busworld-TG
-projetando recursos para testes
+projecting resources for tests
+
+## started
+
+commands
+:"npm run up"
+:"npm run migrate:down"
+:"npm run migrate:start"
+:"npm run migrate:up"
+
+~~~~teste
+
+
+
