@@ -2,16 +2,15 @@
 projecting resources for tests
 
 ## started
-
+**Bus World**
 ~~~~
 > npm run up
 > npm run migrate:down
 > npm run migrate:start
 > npm run migrate:up
+~~~~
 
-```TypeScript
-    API dev
 ```
-
-<!-- PROJECT -->
-<strong>Bus World</strong>
+TypeScript
+API dev
+```
