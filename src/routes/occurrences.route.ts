@@ -5,8 +5,9 @@ import { Response, Request } from 'express';
 const routeOccurrence = Router();
 
 routeOccurrence.post('/occurrences/register', (req:Request, res:Response)=>{
-    res.json('teste');
+    
 });
+
 routeOccurrence.get('/occurrences', (req:Request, res:Response)=>{
 
 });
