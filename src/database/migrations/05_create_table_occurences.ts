@@ -7,19 +7,21 @@ async function up(knex:Knex) {
         table.text('content').notNullable();
         table.string('image').notNullable();
 
+        //location
         table.float('latitude').notNullable();
         table.float('longitude').notNullable();
 
-        table.integer('like').unsigned();
-        table.integer('comment').unsigned();
+        //values foreign key
+        table.integer('like').unsigned().notNullable();
+        table.integer('comment').unsigned().notNullable();
+        table.integer('bus').unsigned().notNullable();
+        table.integer('user').unsigned().notNullable();
 
-        //foreigns o bus fazer recursos ainda
-
-        table.string('bus').notNullable();
-
-        
-        table.foreign('like').references('likes.id')
-        table.foreign('comment').references('comments.id')
+        //foreigns
+        table.foreign('like').references('likes.id');
+        table.foreign('comment').references('comments.id');
+        table.foreign('bus').references('buses.id');
+        table.foreign('user').references('users.id');
 
     })
 }
