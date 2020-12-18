@@ -16,6 +16,7 @@
   "scripts": {
     "up":"ts-node-dev --inspect --ignore-watch node_modules src/index.ts",
     "migrate:down": "knex --knexfile knexfile.ts migrate:down",
+    "migrate:downAll": "knex --knexfile knexfile.ts migrate:down & knex --knexfile knexfile.ts migrate:down && knex --knexfile knexfile.ts migrate:down && knex --knexfile knexfile.ts migrate:down",
     "migrate:start": "knex --knexfile knexfile.ts migrate:latest",
     "migrate:up": "knex --knexfile knexfile.ts migrate:up"
   },

@@ -7,7 +7,7 @@ const con = knex({
       host : '127.0.0.1',
       user : 'root',
       password : '',
-      database : 'node_typescript'
+      database : 'bus'
     },
     useNullAsDefault:true
 })
