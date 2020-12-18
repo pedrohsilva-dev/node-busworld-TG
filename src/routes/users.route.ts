@@ -1,10 +1,9 @@
 import { Router } from "express";
 import con from '../database/connection';
-import { login } from "./middlewares/user.route";
 
 const routeUser = Router();
 
-routeUser.post('/users/register', async (req, res) => {
+routeUser.post('/user/register', async (req, res) => {
 
     const { name, email, password, location, date } = req.body;
 
@@ -39,7 +38,7 @@ routeUser.get('/users', async (req, res) => {
 
 });
 
-routeUser.get('/users/:id',async (req, res) => {
+routeUser.get('/user/:id',async (req, res) => {
 
     const { id } = req.params;
 
@@ -53,7 +52,7 @@ routeUser.get('/users/:id',async (req, res) => {
 
 });
 
-routeUser.put('/users/modify/:id',async (req, res) => {
+routeUser.put('/user/modify/:id',async (req, res) => {
     const { id } = req.params;
     const { name, email, password, location, date } = req.body;
 
@@ -71,7 +70,7 @@ routeUser.put('/users/modify/:id',async (req, res) => {
 
 });
 
-routeUser.delete('/users/destroy/:id', async (req, res) => {
+routeUser.delete('/user/destroy/:id', async (req, res) => {
 
     const { id } = req.params;
     const resul = await con('users').where("id", id).delete();

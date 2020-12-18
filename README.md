@@ -4,7 +4,8 @@ projecting resources for tests
 ## started
 **Bus World**
 
-`create database bus;`<strong>sql</strong>
+`create database bus;`<stro
+ng>sql</strong>
 
 ~~~~
 > npm run up
